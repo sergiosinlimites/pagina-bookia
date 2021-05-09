@@ -75,3 +75,34 @@ body {
     border:2px solid var(--azul-claro);
     border-radius: 15px;
 }
+
+.contenedor-libros {
+    grid-row: 3;
+    background: silver;
+    display: grid;
+    grid-template-columns: minmax(10px, 1fr) repeat(6, minmax(50px, 1fr)) minmax(10px, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.contenedor-libros__lib1 {
+    background-image: url(./assets/img/book1.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 2 / 4;
+    grid-row:2 / 5;
+    width:100px;
+    height:150px;
+}
+
+.contenedor-libros__lib2 {
+    background-image: url(./assets/img/book2.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 3 / 5;
+    grid-row:2 / 5;
+    width:100px;
+    height:150px;
+    position: relative;
+    top:50px
+}
+
